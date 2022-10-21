@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="applicable-device" content="pc,mobile">
+    <title>导航</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="order by www.91084.com">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="static/js/zblogphp.js" type="text/javascript"></script>
+  </head>
+  
+  <body data-version="3.3.0" data-settings-changed-at="0" data-cid="1655383715630">
+    <header class="header">
+      <div class="h-fix">
+        <div class="container">
+
+          <!-- logo -->
+          <!-- <h1 class="logo">
+            <a href="index.html">
+              <img id="light-logo" src="static/images/logo1.png" alt="站长导航资源网" >
+              <img id="dark-logo" src="static/images/logo2.png" alt="站长导航资源网" >
+            </a>
+          </h1> -->
+
+          <!-- 切换夜间主题按钮 -->
+          <div class="darkmode">
+            <a href="javascript:switchNightMode()" target="_self" class="">
+              <i class="fa fa-moon-o">
+              </i>
+            </a>
+          </div>
+
+          <!-- 上导航栏 -->
+          <nav class="nav-bar" id="nav-box" data-type="index" data-infoid="">
+            <ul class="nav">
+              <!-- 单个导航 -->
+              <!-- <li id="nvabar-item-index" class="active">
+                <a href="index.html">首页</a>
+              </li> -->
+
+
+              {% for head in context.tag.heads %}
+              <li id="navbar-category-3" class="li-cate-3">
+                <a href="#{{ head_id }}">{{ head.head_name }}</a>
+                <ul class="sub-menu">
+                  {% for nav in context.tag.data %}
+                  {% if nav.head_id == head.head_id %}
+                  <li id="navbar-category-8" class="li-cate-8">
+                    <a href="{{ nav.url }}" target="_blank" onclick="c({{nav.id}})">{{ nav.nav_name }}</a>
+                  </li>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+              </li>
+              {% endfor %}
+
+            </ul>
+          </nav>
+
+          <!-- <div class="submit fr">
+            <a href="index.html" target="_blank" class="a transition">
+              <i class="fa fa-heart">
+              </i>投稿</a>
+          </div> -->
+
+
+        </div>
+      </div>
+    </header>
+
+    <!-- 轮播图 搜索引擎区 -->
+    <div id="banner-bear" class="preserve3d csstransforms3d">
+      <div class="primary-menus">
+        <ul class="selects">
+          <li>常用</li>
+          <li class="current" data-target="search_1">
+            <span>百度</span>
+          </li>
+          <li data-target="search_2">
+            <span>Bing</span>
+          </li>
+          <li data-target="search_3">
+            <span>360</span>
+          </li>
+          <li data-target="search_4">
+            <span>搜狗</span>
+          </li>
+          <li data-target="search_5">
+            <span>Coobe</span>
+          </li>
+          <li data-target="search_6">
+            <span>CSDN</span>
+          </li>
+          <li data-target="search_7">
+            <span>知乎</span>
+          </li>
+          <li data-target="search_8">
+            <span>站内</span>
+          </li>
+        </ul>
+        <div class="cont">
+          <div class="left-cont">
+            <form class="search" id="search_1" action="https://www.baidu.com/s?wd=" method="get" target="_blank">
+              <input type="text" name="wd" class="s" placeholder="请输入关键词">
+              <button type="submit" name="" class="btn">百度搜索</button>
+            </form>
+            <form class="search hidden" id="search_2" action="https://cn.bing.com/search?q=" method="get" target="_blank">
+              <input type="text" name="q" class="s" placeholder="请输入关键词">
+              <button type="submit" name="" class="btn">Bing搜索</button>
+            </form>
+            <form class="search hidden" id="search_3" action="https://www.so.com/s?q=" method="get" target="_blank">
+              <input type="text" name="q" class="s" placeholder="请输入关键词">
+              <button type="submit" name="" class="btn">360搜索</button>
+            </form>
+            <form class="search hidden" id="search_4" action="https://www.sogou.com/web?query=" method="get" target="_blank">
+              <input type="text" name="query" class="s" placeholder="请输入关键词">
+              <button type="submit" name="" class="btn">搜狗搜索</button>
+            </form>
+            <form class="search hidden" id="search_5" action="https://goobe.io/search.aspx" method="post" target="_blank">
+              <input type="text" name="k" class="s" placeholder="请输入关键词">
+              <button type="submit" name="" class="btn">Coobe搜索</button>
+            </form>
+            <form class="search hidden" id="search_6" action="https://so.csdn.net/so/search?q=" method="get" target="_blank">
+              <input type="text" name="q" class="s" placeholder="请输入关键词">
+              <button type="submit" name="" class="btn">CSDN搜索</button>
+            </form>
+            <form class="search hidden" id="search_7" action="https://www.zhihu.com/search?q=" method="get" target="_blank">
+              <input type="text" name="q" class="s" placeholder="请输入关键词">
+              <button type="submit" name="" class="btn">知乎搜索</button>
+            </form>
+            <form class="search hidden" id="search_8" name="formsearch" action="http://oyqj-0922-19.demo.cssmoban.com:8020/plus/search.php">
+              <input type="text" name="q" class="s" placeholder="请输入关键词">
+              <button type="submit" name="" class="btn">站内搜索</button>
+              <input type="hidden" name="kwtype" value="0">
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 轮播图 -->
+      <div class="banner-wrap scenes-ready">
+        <div id="stage">
+          <div class="space">
+          </div>
+          <div class="mountains">
+            <div class="mountain mountain-1">
+            </div>
+            <div class="mountain mountain-2">
+            </div>
+            <div class="mountain mountain-3">
+            </div>
+          </div>
+          <div class="bear">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- 下方导航 -->
+    <div class="container">
+      <div class="row row-position">
+        <div class="col-md-12">
+          
+          <!-- 开始1 -->
+          {% for head in context.tag.heads %}
+          <div class="part current" id="cate2" data-title="{{ head.head_name }}" style="position: relative;">
+            <div style="display: none; width: 1220px; height: 57px; margin: 0px; float: none;"></div>
+            <p class="tt sticky" style="width: 1220px;">
+              <strong>{{ head.head_name }}</strong>
+            </p>
+            <div class="items">
+
+              <div class="row">
+                {% for nav in context.tag.data %}
+                {% if nav.head_id == head.head_id %}
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                  <div class="item">
+<!--                     <a class="link" target="_blank" href="{{ nav.url }}" rel="nofollow">
+                      <i class="autoleft fa fa-angle-right" title="{{ nav.nav_name }}">
+                      </i>
+                    </a> -->
+                    <a class="a" href="{{ nav.url }}" title="{{ nav.nav_name }}" target="_blank" onclick="c({{nav.id}})">
+                      <img src="{{ nav.photo }}" alt="{{ nav.nav_name }}" title="{{ nav.nav_name }}">
+                      <h3>{{ nav.nav_name }}</h3>
+                      <p>{{ nav.abstract }}</p>
+                    </a>
+                  </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          <!-- 结束1 -->
+
+          
+          <!-- 另一种导航 -->
+          <!--
+          <div class="part" id="cate19" data-title="站长之家" style="position: relative;">
+            <div style="display: none; width: 1220px; height: 57px; margin: 0px; float: none;">
+            </div>
+            <p class="tt sticky" style="width: 1220px;">
+              <strong>链接链接</strong>
+            </p>
+            <div class="items">
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="item art-item transition">
+                    <a class="art-a" href="http://oyqj-0922-19.demo.cssmoban.com:8020/zhanzhang/luntan/12.html" title="新手站长做网站不要太看重SEO，注重提示用户体" target="_blank">
+                      <img class="img-cover" src="static/images/1-21051111141B10-lp.jpg" alt="新手站长做网站不要太看重SEO，注重提示用户体" title="新手站长做网站不要太看重SEO，注重提示用户体">
+                    </a>
+                    <h3 class="art-title">
+                      <a class="" href="http://oyqj-0922-19.demo.cssmoban.com:8020/zhanzhang/luntan/12.html" title="新手站长做网站不要太看重SEO，注重提示用户体" target="_blank">新手站长做网站不要太看重SEO，注重提示用户体</a>
+                    </h3>
+                    <p>忘记SEO就是最好的SEO 初为站长的时候，每天要查无数次网站收录情况，权重排...</p>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="item art-item transition">
+                    <a class="art-a" href="http://oyqj-0922-19.demo.cssmoban.com:8020/zhanzhang/seo/11.html" title="新手站长连续11月不停更新内容，为什么依然没有" target="_blank">
+                      <img class="img-cover" src="static/images/1-210511111315T9-lp.jpg" alt="新手站长连续11月不停更新内容，为什么依然没有" title="新手站长连续11月不停更新内容，为什么依然没有">
+                    </a>
+                    <h3 class="art-title">
+                      <a class="" href="http://oyqj-0922-19.demo.cssmoban.com:8020/zhanzhang/seo/11.html" title="新手站长连续11月不停更新内容，为什么依然没有" target="_blank">新手站长连续11月不停更新内容，为什么依然没有</a>
+                    </h3>
+                    <p>新手站长提问称： 我迷茫了,网站已经11个月持续不停更新内容,就是讨不好搜索...</p>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="item art-item transition">
+                    <a class="art-a" href="http://oyqj-0922-19.demo.cssmoban.com:8020/zhanzhang/seo/10.html" title="2021最新网站seo优化步骤分享" target="_blank">
+                      <img class="img-cover" src="static/images/1-2105111112000-L.jpg" alt="2021最新网站seo优化步骤分享" title="2021最新网站seo优化步骤分享">
+                    </a>
+                    <h3 class="art-title">
+                      <a class="" href="http://oyqj-0922-19.demo.cssmoban.com:8020/zhanzhang/seo/10.html" title="2021最新网站seo优化步骤分享" target="_blank">2021最新网站seo优化步骤分享</a>
+                    </h3>
+                    <p>以下干货为网站优化老司机经验总结的，大家一定要好好学习下 1.域名选择: 企...</p>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="item art-item transition">
+                    <a class="art-a" href="http://oyqj-0922-19.demo.cssmoban.com:8020/zhanzhang/seo/9.html" title="最新SEO小技巧分享，网站被降权了怎么办？" target="_blank">
+                      <img class="img-cover" src="static/images/1-21051111111K35-lp.jpg" alt="最新SEO小技巧分享，网站被降权了怎么办？" title="最新SEO小技巧分享，网站被降权了怎么办？">
+                    </a>
+                    <h3 class="art-title">
+                      <a class="" href="http://oyqj-0922-19.demo.cssmoban.com:8020/zhanzhang/seo/9.html" title="最新SEO小技巧分享，网站被降权了怎么办？" target="_blank">最新SEO小技巧分享，网站被降权了怎么办？</a>
+                    </h3>
+                    <p>今天站长导航网分享两个SEO小技巧，网站被降权了怎么办？备案域名对收录有没...</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       -->
+
+
+      <!-- 再一种链接 -->
+      <div class="f-link part">
+        <p class="tt">
+          <strong>其它链接</strong>
+        </p>
+        <ul id="flink" class="container">
+          <li>
+            <a href="#" target="_blank">阿里云</a>
+          </li>
+          <li>
+          </li>
+          <li>
+            <a href="#" target="_blank">华为云</a>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+            <a href="#" target="_blank">百度云</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- 页脚 -->
+    <div class="footer-copyright ">
+      <div class="container">
+        <p>常用网址导航</p>
+          <p>Copyright © 2022-2022</p>
+      </div>
+    </div>
+
+
+    <!-- 回到顶部 -->
+    <div id="backtop" class="fa fa-angle-up"></div>
+
+
+    <script src="static/js/jquery.cookie.min.js" type="text/javascript"></script>
+    <script src="static/js/main.js" type="text/javascript"></script>
+    <script src="static/js/swiper.js" type="text/javascript"></script>
+    
+    <!--初始化Swiper-->
+    <script>
+      var swiper = new Swiper('.swiper-container', 
+        {
+          pagination: '.swiper-pagination',
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          centeredSlides: true,
+          autoplay: 3500,
+          slidesPerView: 1,
+          paginationClickable: true,
+          autoplayDisableOnInteraction: false,
+          spaceBetween: 0,
+          loop: true
+        }
+      );
+    </script>
+
+    <script>
+      /* tooltip.js初始化 */
+      $('.autoleft').tooltip({
+        align: 'autoLeft',
+        fade: {
+          duration: 200,
+          opacity: 0.8
+        }
+      });
+    </script>
+
+    <script>
+      /* jQuery.positionSticky.js初始化 */
+      jQuery('.sticky').positionSticky({
+        offsetTop: 78
+      });
+    </script>
+          
+    <script>
+      function c(i){
+          $.get("/c/"+i+"/",function(data,status){
+           console.log("数据: " + data + "\n状态: " + status);
+          });
+      }      
+    </script>
+
+    <div style="position: fixed; z-index: 10000; right: -99999px; border: 1px solid;">
+      <canvas width="100" height="100">
+      </canvas>
+    </div>
+
+    <div style="position: fixed; z-index: 10000; right: -99999px; border: 1px solid;">
+      <canvas width="100" height="100">
+      </canvas>
+    </div>
+  </body>
+
+</html>
