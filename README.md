@@ -15,6 +15,7 @@ pip install flask tinydb
 ```bash
 python install.py
 python app.py
+nohup python app.py > pynavs.log 2>&1 &
 ```
 
 ### 打开浏览器访问

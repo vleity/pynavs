@@ -26,6 +26,7 @@ def index():
     head = db.table("Head")
     navigation = db.table("Navigation")
     data = pd.DataFrame(data=navigation.all())
+    data.access_count = data.access_count.astype('int')
     db.close()
 
     # 根据导航类型分类
