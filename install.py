@@ -31,7 +31,7 @@ if __name__ == '__main__':
                 "url": "https://www.fivedata.cn/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -42,7 +42,7 @@ if __name__ == '__main__':
                 "url": "https://hadoop.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -53,7 +53,7 @@ if __name__ == '__main__':
                 "url": "https://zookeeper.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -64,7 +64,7 @@ if __name__ == '__main__':
                 "url": "https://hive.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 1
             }, 
@@ -75,7 +75,7 @@ if __name__ == '__main__':
                 "url": "https://kafka.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -86,7 +86,7 @@ if __name__ == '__main__':
                 "url": "https://hbase.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -97,7 +97,7 @@ if __name__ == '__main__':
                 "url": "https://flume.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -108,7 +108,7 @@ if __name__ == '__main__':
                 "url": "https://spark.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -119,7 +119,7 @@ if __name__ == '__main__':
                 "url": "https://flink.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -130,7 +130,7 @@ if __name__ == '__main__':
                 "url": "https://dolphinscheduler.apache.org/zh-cn/index.html", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -141,7 +141,7 @@ if __name__ == '__main__':
                 "url": "https://azkaban.readthedocs.io/en/latest/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -152,7 +152,7 @@ if __name__ == '__main__':
                 "url": "https://pentaho-community.atlassian.net/wiki/spaces/EAI/overview", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 1
             }, 
@@ -163,7 +163,7 @@ if __name__ == '__main__':
                 "url": "http://www.kettle.org.cn/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 1
             }, 
@@ -174,9 +174,9 @@ if __name__ == '__main__':
                 "url": "https://gallery.pyecharts.org/#/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
-                "access_count": 2
+                "access_count": "2"
             }, 
             {
                 "id": str(uuid.uuid1()), 
@@ -185,7 +185,7 @@ if __name__ == '__main__':
                 "url": "https://seatunnel.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 1
             }, 
@@ -196,7 +196,7 @@ if __name__ == '__main__':
                 "url": "https://interestinglab.github.io/seatunnel-docs/#/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -207,7 +207,7 @@ if __name__ == '__main__':
                 "url": "https://pigsty.cc/zh/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 3, 
+                "head_id": "3", 
                 "head_name": "PostgreSQL专区", 
                 "access_count": 2
             }, 
@@ -218,7 +218,7 @@ if __name__ == '__main__':
                 "url": "https://github.com/alibaba/DataX", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -229,7 +229,7 @@ if __name__ == '__main__':
                 "url": "https://github.com/WeiYe-Jing/datax-web", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -240,7 +240,7 @@ if __name__ == '__main__':
                 "url": "https://debezium.io/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 1
             }, 
@@ -251,7 +251,7 @@ if __name__ == '__main__':
                 "url": "https://postgreshub.cn/index", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 3, 
+                "head_id": "3", 
                 "head_name": "PostgreSQL专区", 
                 "access_count": 1
             }, 
@@ -262,7 +262,7 @@ if __name__ == '__main__':
                 "url": "http://www.postgres.cn/docs/14/index.html", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 3, 
+                "head_id": "3", 
                 "head_name": "PostgreSQL专区", 
                 "access_count": 2
             }, 
@@ -273,7 +273,7 @@ if __name__ == '__main__':
                 "url": "https://github.com/greenplum-db/gpdb", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 3, 
+                "head_id": "3", 
                 "head_name": "PostgreSQL专区", 
                 "access_count": 0
             }, 
@@ -284,7 +284,7 @@ if __name__ == '__main__':
                 "url": "https://greenplum.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 3, 
+                "head_id": "3", 
                 "head_name": "PostgreSQL专区", 
                 "access_count": 0
             }, 
@@ -295,7 +295,7 @@ if __name__ == '__main__':
                 "url": "https://github.com/digoal", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 3, 
+                "head_id": "3", 
                 "head_name": "PostgreSQL专区", 
                 "access_count": 0
             }, 
@@ -306,7 +306,7 @@ if __name__ == '__main__':
                 "url": "http://www.pgedu.cn/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 3, 
+                "head_id": "3", 
                 "head_name": "PostgreSQL专区", 
                 "access_count": 0
             }, 
@@ -317,7 +317,7 @@ if __name__ == '__main__':
                 "url": "https://worldvectorlogo.com/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 4, 
+                "head_id": "4", 
                 "head_name": "素材专区", 
                 "access_count": 0
             }, 
@@ -328,7 +328,7 @@ if __name__ == '__main__':
                 "url": "https://www.60logo.com/list", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 4, 
+                "head_id": "4", 
                 "head_name": "素材专区", 
                 "access_count": 0
             }, 
@@ -339,7 +339,7 @@ if __name__ == '__main__':
                 "url": "https://gitee.com/vleity", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 99, 
+                "head_id": "99", 
                 "head_name": "个人专区", 
                 "access_count": 4
             }, 
@@ -350,7 +350,7 @@ if __name__ == '__main__':
                 "url": "https://github.com/vleity", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 99, 
+                "head_id": "99", 
                 "head_name": "个人专区", 
                 "access_count": 1
             }, 
@@ -361,7 +361,7 @@ if __name__ == '__main__':
                 "url": "https://delta.io/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -372,7 +372,7 @@ if __name__ == '__main__':
                 "url": "https://hudi.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -383,7 +383,7 @@ if __name__ == '__main__':
                 "url": "https://iceberg.apache.org/", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 2, 
+                "head_id": "2", 
                 "head_name": "大数据专区", 
                 "access_count": 0
             }, 
@@ -394,7 +394,7 @@ if __name__ == '__main__':
                 "url": "https://www.enterprisedb.com/software-downloads-postgres", 
                 "photo": "static/images/pynavs.png", 
                 "nav_type": "tag", 
-                "head_id": 3, 
+                "head_id": "3", 
                 "head_name": "PostgreSQL专区", 
                 "access_count": 1
             }
